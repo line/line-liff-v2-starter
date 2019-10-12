@@ -1,0 +1,70 @@
+html {
+    font-size: 11px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+}
+
+div {
+    max-width: 100%;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+img { 
+    max-width: 25%; 
+    height: auto; 
+}
+
+button {
+    margin: 4px;
+}
+
+#code-block {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#profilePictureDiv {
+    text-align: center;
+}
+
+#profileImageDiv {
+    height: 100px;
+    width: 100px;
+}
+
+#statusMessage {
+    position: relative;
+    top: 40px;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.buttonGroup {
+    position: relative;
+    top: 20px;
+}
+
+.hidden {
+    display: none;
+}
