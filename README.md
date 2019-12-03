@@ -236,7 +236,7 @@ You'll find the following buttons in the starter app.
 | ------ | ----------- | :------------: | :---------------: |
 | Open External Window | Opens `https://line.me` in LINE's in-app browser.  | ✅ | ✅ |
 | Close LIFF App  | Closes the LIFF app.  | ✅ | ❌ |
-| Open QR Code Reader  | Opens the QR code reader and outputs the result. | ✅ | ❌ |
+| Open QR Code Reader  | Opens the QR code reader and outputs the result. <br>⚠️ **Due to a technical issue, `liff.scanCode()` is temporarily unavailable on LINE for iOS v9.19.0 and later.**</br>| ✅ | ❌ |
 | Send Message  | Sends a sample message on behalf of the user if the LIFF app is opened in the chat screen.  | ✅ | ❌ |
 | Get Access Token  | Gets the current user's access token.  | ✅ | ✅ |
 | Get Profile  | Gets the current user's profile.  | ✅ | ✅ |
