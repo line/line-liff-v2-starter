@@ -37,6 +37,7 @@ Follow the below instructions to deploy your app using the Heroku button and Nod
 2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the LIFF URL shown in the console: `line://app/{liffId}`.
 3. Locate the **Scope** option and click the **Edit** button.
 4. Click the **View all** option and enable `chat_message.write`. This scope is required for the LIFF app to send messages on behalf of the user.
+5. Change the status of LIFF app to **Published**.
 
 ### Pass your LIFF ID to the app using an environment variable
 
@@ -164,6 +165,8 @@ Follow the below instructions to deploy your customized app using Heroku and Nod
     ```
     
  6. Browse to your app's URL (`https://{Heroku app name}.herokuapp.com`) and confirm that your app is operational. You should see a number of buttons, such as **Open External Window** and **Close LIFF App**.
+
+ 7. Lastly, check whether your channel status is **Published**.
 
 For more information about how to try the app, see [Trying the app](#trying-the-app).
 
