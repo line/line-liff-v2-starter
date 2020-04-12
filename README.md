@@ -34,7 +34,7 @@ Follow the below instructions to deploy your app using the Heroku button and Nod
 ### Add the starter app to LIFF
 
 1. Follow the instructions on the page [Adding a LIFF app](https://developers.line.biz/en/docs/liff/registering-liff-apps/). 
-2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the LIFF URL shown in the console: `line://app/{liffId}`.
+2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the **LIFF URL** shown in the console: `https://app/{liffId}`.
 3. Locate the **Scope** option and click the **Edit** button.
 4. Click the **View all** option and enable `chat_message.write`. This scope is required for the LIFF app to send messages on behalf of the user.
 5. Change the status of LIFF app to **Published**.
