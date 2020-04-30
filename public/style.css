@@ -61,8 +61,7 @@ button {
 }
 
 .buttonGroup {
-    position: relative;
-    top: 20px;
+    padding-top: 20px;
 }
 
 .hidden {

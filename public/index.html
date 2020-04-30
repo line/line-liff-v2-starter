@@ -22,7 +22,11 @@
                     <button id="getAccessToken">Get Access Token</button>
                     <button id="getProfileButton">Get Profile</button>
                 </div>
+                <div class="buttonRow">
+                    <button id="shareTargetPicker">Open Share Target Picker</button>
+                </div>
             </div>
+            <div id="shareTargetPickerMessage"></div>
             <!-- ACCESS TOKEN DATA -->
             <div id="accessTokenData" class="hidden textLeft">
                 <h2>Access Token</h2>
@@ -37,7 +41,7 @@
             <!-- SCAN QR RESULT -->
             <div id="scanQr" class="hidden textLeft">
                 <h2>QR Code reader</h2>
-                <a href="#" onclick="toggleQRCodeReader()">Close QR Code Reader Result</a>
+                <a href="#" onclick="toggleQrCodeReader()">Close QR Code Reader Result</a>
                 <table>
                     <tr>
                         <th>scanCode Result</th>
@@ -81,6 +85,10 @@
                     <tr>
                         <th>LIFF SDK Version</th>
                         <td id="sdkVersion" class="textLeft"></td>
+                    </tr>
+                    <tr>
+                        <th>LINE Version</th>
+                        <td id="lineVersion" class="textLeft"></td>
                     </tr>
                     <tr>
                         <th>isInClient</th>
