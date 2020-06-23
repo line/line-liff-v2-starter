@@ -185,23 +185,16 @@ function registerButtonHandlers() {
         });
     });
 
-    document.getElementById('shareTargetPicker').addEventListener('click', function() {
-        if (!liff.isInClient()) {
-            sendAlertIfNotInClient();
-        } else {
-            if (liff.isApiAvailable('shareTargetPicker')) {
-                liff.shareTargetPicker([
-                    {
-                        'type': 'text',
-                        'text': 'Hello, World!'
-                    }
-                ])
-                    .then(
-                        document.getElementById('shareTargetPickerMessage').textContent = "Share target picker was launched."
-                    ).catch(function(res) {
-                        document.getElementById('shareTargetPickerMessage').textContent = "Failed to launch share target picker.";
-                    });
-            }
+    document.getElementById('shareTargetPicker').addEventListener('click', function () {
+        if (liff.isApiAvailable('shareTargetPicker')) {
+            liff.shareTargetPicker([{
+                'type': 'text',
+                'text': 'Hello, World!'
+            }]).then(
+                document.getElementById('shareTargetPickerMessage').textContent = "Share target picker was launched."
+            ).catch(function (res) {
+                document.getElementById('shareTargetPickerMessage').textContent = "Failed to launch share target picker.";
+            });
         }
     });
 
