@@ -96,6 +96,7 @@ function displayIsInClientInfo() {
         document.getElementById('isInClientMessage').textContent = 'You are opening the app in the in-app browser of LINE.';
     } else {
         document.getElementById('isInClientMessage').textContent = 'You are opening the app in an external browser.';
+        document.getElementById('shareTargetPicker').classList.toggle('hidden');
     }
 }
 
