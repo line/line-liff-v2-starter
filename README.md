@@ -133,28 +133,28 @@ Follow the below instructions to deploy your customized app using Heroku and Nod
 
 ### Customize and deploy the app via terminal
 
-1. Set your LIFF ID using an environment variable for local testing.
+1. Set your LIFF ID using an environment variable.
+
+    ```shell
+    heroku config:set MY_LIFF_ID={liffId}
+    ```
+
+2. Copy your environment variable into the `.env` file for local testing.
 
     Heroku recommends setting up an `.env` file to use an environment variable in a local environment.
     ```shell
-    $ heroku config:get MY_LIFF_ID={liffId} -s  >> .env
+    $ heroku config:get MY_LIFF_ID -s  >> .env
     ```
     Note: Don't commit the `.env` file to GitHub. To exclude it, add the `.env` file to your `.gitignore`.
 
-2. Customize your app. For more information about available LIFF methods, see [API reference](https://developers.line.biz/en/reference/liff/). 
+3. Customize your app. For more information about available LIFF methods, see [API reference](https://developers.line.biz/en/reference/liff/). 
 
-3. Run the app locally to preview your changes:
+4. Run the app locally to preview your changes:
 
     ```shell
     heroku local
     ```
    View the app by browsing to [localhost:5000](http://localhost:5000/).
-
-4. Set your LIFF ID using an environment variable for production.
-
-    ```shell
-    heroku config:set MY_LIFF_ID={liffId}
-    ```
 
 5. If you're happy with your changes, stage, commit, and deploy the app.
 
@@ -164,9 +164,9 @@ Follow the below instructions to deploy your customized app using Heroku and Nod
     $ git push heroku master
     ```
     
- 6. Browse to your app's URL (`https://{Heroku app name}.herokuapp.com`) and confirm that your app is operational. You should see a number of buttons, such as **Open External Window** and **Close LIFF App**.
+6. Browse to your app's URL (`https://{Heroku app name}.herokuapp.com`) and confirm that your app is operational. You should see a number of buttons, such as **Open External Window** and **Close LIFF App**.
 
- 7. Lastly, check whether your channel status is **Published**.
+7. Lastly, check whether your channel status is **Published**.
 
 For more information about how to try the app, see [Trying the app](#trying-the-app).
 
