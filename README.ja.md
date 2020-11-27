@@ -9,18 +9,18 @@
 LIFFの使用方法に応じて、デプロイ方法を選択してください。
 
 - LIFFが提供する機能を試してみたいだけなら：[Herokuボタンを使ってターミナルを使わずにアプリをデプロイする](#Herokuボタンを使ってターミナルを使わずにアプリをデプロイする)
-- HerokuとNode.jsを使ってLIFFアプリをカスタム化して開発したいなら：[アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする](#アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする)
+- HerokuとNode.jsを使ってLIFFアプリをカスタム化して開発したいなら：[アプリをカスタマイズしてターミナル経由でHerokuにデプロイする](#アプリをカスタマイズしてターミナル経由でHerokuにデプロイする)
 - お好みのサーバープラットフォームを使ってLIFFアプリを開発したいなら：[他のサーバープラットフォームを使用する](#他のサーバープラットフォームを使用する)
 
 ## Herokuボタンを使ってターミナルを使わずにアプリをデプロイする
 
-以下の手順に従うと、HerokuボタンとNode.jsを使ってLIFF v2 starter appを簡単にアプリをデプロイできます。
+以下の手順に従うと、HerokuボタンとNode.jsを使ってLIFF v2 starter appを簡単にデプロイできます。
 
 ### 必要なもの
 
 | 項目 | 説明 |
 | ---- | ----------- |
-| LINEログインチャネル | LINEプラットフォームが提供する機能をアプリで利用するための通信路。 チャネルは、[LINE Developers コンソール](https://developers.line.biz/console/register/messaging-api/channel/)で作成できます。 |
+| LINEログインチャネル | LINEログインが提供する機能をアプリで利用するための通信路。 チャネルは、[LINE Developers コンソール](https://developers.line.biz/console/register/messaging-api/channel/)で作成できます。 |
 | Heroku アカウント（任意） | [Heroku](https://www.heroku.com)は、Webアプリをデプロイできるクラウドサービスです。[他のサーバープラットフォームを使用する](#他のサーバープラットフォームを使用する)場合は、Herokuのアカウントは必要ありません。 |
 
 ### 「Deploy to Heroku」ボタンを使ってアプリをデプロイする
@@ -81,13 +81,13 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
     $ heroku logs --app {Heroku app name} --tail
     ```
 
-## アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする
+## アプリをカスタマイズしてターミナル経由でHerokuにデプロイする
 
 以下の手順に従うと、HerokuとNode.jsを使用してカスタマイズしたアプリをデプロイできます。
 
-### Install the app on your local machine
+### ローカルマシンにアプリをインストールする
 
-1. ローカルマシンにアプリをインストールする
+1. 以下のものがインストールされていることを確認してください。
 
     - [Git](https://git-scm.com/)
     - [Node.js](https://nodejs.org/en/)
@@ -108,7 +108,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 ### ローカルリポジトリをHerokuに紐づける
 
-1. コマンドラインからHerokuにログインします。
+1. ターミナルからHerokuにログインします。
 
     ```shell
     $ heroku login
@@ -188,7 +188,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 ### 必要なもの
 | Item | Description |
 | ---- | ----------- |
-| LINEログインチャネル | LINEプラットフォームが提供する機能をアプリで利用するための通信路。 チャネルは、[LINE Developers コンソール](https://developers.line.biz/console/register/messaging-api/channel/)で作成できます。 |
+| LINEログインチャネル | LINEログインが提供する機能をアプリで利用するための通信路。 チャネルは、[LINE Developers コンソール](https://developers.line.biz/console/register/messaging-api/channel/)で作成できます。 |
 
 ### リポジトリをクローンする
 
