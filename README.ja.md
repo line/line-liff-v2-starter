@@ -2,7 +2,7 @@
 
 [LINE Front-end Framework (LIFF)](https://developers.line.biz/ja/docs/liff/overview/)の基本的な機能を実演する小さなウェブアプリケーションです。
 
-:earth_americas: このREADMEを英語で読みたい場合は、こちらのページを参照してください： [English](README.md)
+:earth_americas:  このREADMEを英語で読みたい場合は、こちらのページを参照してください： [English](README.md)
 
 ## デプロイ方法
 
@@ -12,7 +12,7 @@ LIFFの使用方法に応じて、デプロイ方法を選択してください�
 - HerokuとNode.jsを使ってLIFFアプリをカスタム化して開発したいなら：[アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする](#customize-the-app-and-deploy-it-on-Heroku-via-the-terminal)
 - お好みのサーバープラットフォームを使ってLIFFアプリを開発したいなら：[他のサーバープラットフォームを使用する](#deploy-the-app-using-any-other-server-platform)
 
-## <a name="#use-Heroku-button-to-deploy-the-app-without-using-the-terminal"></a> Herokuボタンを使ってターミナルを使わずにアプリをデプロイする
+## <a id="#use-Heroku-button-to-deploy-the-app-without-using-the-terminal"></a> Herokuボタンを使ってターミナルを使わずにアプリをデプロイする
 
 以下の手順に従うと、HerokuボタンとNode.jsを使ってLIFF v2 starter appを簡単にアプリをデプロイできます。
 
