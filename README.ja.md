@@ -8,11 +8,11 @@
 
 LIFFの使用方法に応じて、デプロイ方法を選択してください。
 
-- LIFFが提供する機能を試してみたいだけなら：[Herokuボタンを使ってターミナルを使わずにアプリをデプロイする](#use-Heroku-button-to-deploy-the-app-without-using-the-terminal)
-- HerokuとNode.jsを使ってLIFFアプリをカスタム化して開発したいなら：[アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする](#customize-the-app-and-deploy-it-on-Heroku-via-the-terminal)
-- お好みのサーバープラットフォームを使ってLIFFアプリを開発したいなら：[他のサーバープラットフォームを使用する](#deploy-the-app-using-any-other-server-platform)
+- LIFFが提供する機能を試してみたいだけなら：[Herokuボタンを使ってターミナルを使わずにアプリをデプロイする](#Herokuボタンを使ってターミナルを使わずにアプリをデプロイする)
+- HerokuとNode.jsを使ってLIFFアプリをカスタム化して開発したいなら：[アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする](#アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする)
+- お好みのサーバープラットフォームを使ってLIFFアプリを開発したいなら：[他のサーバープラットフォームを使用する](#他のサーバープラットフォームを使用する)
 
-## <a id="#use-Heroku-button-to-deploy-the-app-without-using-the-terminal"></a> Herokuボタンを使ってターミナルを使わずにアプリをデプロイする
+## Herokuボタンを使ってターミナルを使わずにアプリをデプロイする
 
 以下の手順に従うと、HerokuボタンとNode.jsを使ってLIFF v2 starter appを簡単にアプリをデプロイできます。
 
@@ -21,7 +21,7 @@ LIFFの使用方法に応じて、デプロイ方法を選択してください�
 | 項目 | 説明 |
 | ---- | ----------- |
 | LINEログインチャネル | LINEプラットフォームが提供する機能をアプリで利用するための通信路。 チャネルは、[LINE Developers コンソール](https://developers.line.biz/console/register/messaging-api/channel/)で作成できます。 |
-| Heroku アカウント（任意） | [Heroku](https://www.heroku.com)は、Webアプリをデプロイできるクラウドサービスです。[他のサーバープラットフォームを使用する](#deploy-the-app-using-any-other-server-platform)場合は、Herokuのアカウントは必要ありません。 |
+| Heroku アカウント（任意） | [Heroku](https://www.heroku.com)は、Webアプリをデプロイできるクラウドサービスです。[他のサーバープラットフォームを使用する](#他のサーバープラットフォームを使用する)場合は、Herokuのアカウントは必要ありません。 |
 
 ### 「Deploy to Heroku」ボタンを使ってアプリをデプロイする
 
@@ -50,9 +50,9 @@ LIFFの使用方法に応じて、デプロイ方法を選択してください�
 5. **Add**をクリックして入力した内容を保存します。
 6. エンドポイントURL（`https://{Herokuアプリ名}.herokuapp.com`）にWebブラウザーからアクセスし、アプリが正しく動作していることを確かめてください。正しく動作していれば、**Open External Window**や**Close LIFF App**などのボタンが表示されます。
 
-アプリを試す方法については、[アプリを試す](#trying-the-app)を参照してください。
+アプリを試す方法については、[アプリを試す](#アプリを試す)を参照してください。
 
-### <a name="#checking-logs"></a> ログを確認する
+### ログを確認する
 
 HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を使って、アプリのログを確認することができます。
 
@@ -81,7 +81,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
     $ heroku logs --app {Heroku app name} --tail
     ```
 
-## <a name="#customize-the-app-and-deploy-it-on-Heroku-via-the-terminal"></a> アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする
+## アプリをカスタマイズして、ターミナル経由でHerokuにデプロイする
 
 以下の手順に従うと、HerokuとNode.jsを使用してカスタマイズしたアプリをデプロイできます。
 
@@ -91,7 +91,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
     - [Git](https://git-scm.com/)
     - [Node.js](https://nodejs.org/en/)
-    - [こちら](#what-youll-need)に記載されている項目
+    - [こちら](#必要なもの)に記載されている項目
 
 2. [line-liff-v2-starter](https://github.com/line/line-liff-v2-starter)のGitHubリポジトリをクローンします。
 
@@ -174,14 +174,14 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 7. 最後に、チャネルのステータスが**公開済み**であることを確認してください。
 
-アプリを試す方法について詳しくは、[アプリを試す](#trying-the-app)を参照してください。
+アプリを試す方法について詳しくは、[アプリを試す](#アプリを試す)を参照してください。
 
-### ログを確認する
+### Herokuログを確認する
 
 HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を使って、アプリのログを確認することができます。
-詳しくは[ログを確認する](#checking-logs)を参照してください。
+詳しくは[ログを確認する](#ログを確認する)を参照してください。
 
-## <a name="#deploy-the-app-using-any-other-server-platform"></a>他のサーバープラットフォームを使用する
+## 他のサーバープラットフォームを使用する
 
 以下の手順に従うと、Heroku以外のサーバープラットフォームを使用してアプリをデプロイできます。
 
@@ -224,7 +224,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
     const defaultLiffId = "{liffId}"; 
     ```
 
-## <a name="#tryig-the-app"></a>アプリを試す
+## アプリを試す
 
 ### LINEでアプリを試す
 
