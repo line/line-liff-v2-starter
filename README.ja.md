@@ -67,7 +67,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 **Application Logs**の下にログが表示されます。
 
-#### Check your app's logs using Heroku CLI
+#### Heroku CLIを使ってアプリのログを確認する
 
 1. ターミナルからHerokuにログインします。
 
