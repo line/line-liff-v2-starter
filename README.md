@@ -1,6 +1,8 @@
 # LIFF v2 starter app
 
-This is a small web application that demonstrates the basic functionality of the [LINE Front-end Framework (LIFF)](https://developers.line.biz/en/docs/liff/overview/). 
+This is a small web application that demonstrates the basic functionality of the [LINE Front-end Framework (LIFF)](https://developers.line.biz/en/docs/liff/overview/).
+
+:earth_americas:  Read this Japanese: [日本語](README.ja.md)
 
 ## Deploy methods
 
@@ -18,8 +20,8 @@ Follow the below instructions to deploy your app using the Heroku button and Nod
 
 | Item | Description |
 | ---- | ----------- |
-| LINE Messaging API channel  | A channel forms the connection between your app and the LINE Platform. Create a channel on the [LINE Developers console](https://developers.line.biz/console/register/messaging-api/channel/). |
-| Heroku account (optional) | [Heroku](https://www.heroku.com) is a cloud service that lets you deploy and serve web apps for free. You don't need a Heroku account if you're [deploying the app on another platform](#deploy-the-app-using-any-other-server-platform). |
+| LINE Login channel | A LINE Login channel forms the connection between your app and LINE Login. Create a channel on the [LINE Developers Console](https://developers.line.biz/console/register/messaging-api/channel/). |
+| Heroku account (optional) | [Heroku](https://www.heroku.com) is a cloud service that lets you deploy and serve web apps. You don't need a Heroku account if you're [deploying the app on another platform](#deploy-the-app-using-any-other-server-platform). |
 
 ### Deploy the app using 'Deploy to Heroku' button
 
@@ -36,8 +38,8 @@ Follow the below instructions to deploy your app using the Heroku button and Nod
 1. Follow the instructions on the page [Adding a LIFF app](https://developers.line.biz/en/docs/liff/registering-liff-apps/). 
 2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the **LIFF URL** shown in the console: `https://liff.line.me/{liffId}`.
 3. Locate the **Scope** option and click the **Edit** button.
-4. Click the **View all** option and enable `chat_message.write`. This scope is required for the LIFF app to send messages on behalf of the user.
-5. Change the status of LIFF app to **Published**.
+4. Click the **View all** option, enable `chat_message.write`. This scope is required for the LIFF app to send messages on behalf of the user.
+5. If the status of the channel is "Developing", click the **Developing** status button and publish the channel.
 
 ### Pass your LIFF ID to the app using an environment variable
 
@@ -129,7 +131,10 @@ Follow the below instructions to deploy your customized app using Heroku and Nod
 ### Add the starter app to LIFF
 
 1. Follow the instructions on the page [Adding a LIFF app](https://developers.line.biz/en/docs/liff/registering-liff-apps/). 
-2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the LIFF URL shown in the console: `line://app/{liffId}`
+2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the **LIFF URL** shown in the console: `https://liff.line.me/{liffId}`.
+3. Locate the **Scope** option and click the **Edit** button.
+4. Click the **View all** option, enable `chat_message.write`. This scope is required for the LIFF app to send messages on behalf of the user.
+5. If the status of the channel is "Developing", click the **Developing** status button and publish the channel.
 
 ### Customize and deploy the app via terminal
 
@@ -182,7 +187,7 @@ Follow the below instructions to deploy your app using the server platform of yo
 ### Prerequisites
 | Item | Description |
 | ---- | ----------- |
-| LINE Messaging API channel  | A channel forms the connection between your app and the LINE Platform. Create a channel on the [LINE Developers console](https://developers.line.biz/console/register/messaging-api/channel/). |
+| LINE Login channel  | A LINE Login channel forms the connection between your app and LINE Login. Create a channel on the [LINE Developers Console](https://developers.line.biz/console/register/messaging-api/channel/). |
 
 
 ### Clone the repository
@@ -208,7 +213,7 @@ Follow the below instructions to deploy your app using the server platform of yo
 ### Add the starter app to LIFF
 
 1. Follow the instructions on the page [Adding a LIFF app](https://developers.line.biz/en/docs/liff/registering-liff-apps/). 
-2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the LIFF URL shown in the console: `line://app/{liffId}`
+2. Take a note of your LIFF ID, because you'll need it for the next part. The LIFF ID is the final part of the LIFF URL shown in the console: `https://liff.line.me/{liffId}`
 
 3. Set your LIFF ID to the `defaultLiffId` variable in `public/liff-starter.js`.
     ```shell
@@ -221,7 +226,7 @@ Follow the below instructions to deploy your app using the server platform of yo
 
 You can open your LIFF app in LINE by creating a simple link from any chat:
 
-1. In any LINE chat, type `line://app/{liffId}` and send the message. (For example, if your LIFF ID is `123`, send the message `line://app/123`.)
+1. In any LINE chat, type `https://liff.line.me/{liffId}` and send the message. (For example, if your LIFF ID is `123456789`, send the message `https://liff.line.me/123456789`.)
 2. Tap the link in your own message.
 3. Agree to grant the required permissions to the LIFF app.
 
@@ -235,11 +240,11 @@ You'll find the following buttons in the starter app.
 
 ℹ️ Some buttons are available only in either LINE's in-app browser or in a regular browser. See also the [API reference](https://developers.line.biz/en/reference/liff/).
 
-| Button | Description | LINE browser | Regular browser |
+| Button | Description | [LIFF browser](https://developers.line.biz/en/glossary/#liff-browser) | [External browser](https://developers.line.biz/en/glossary/#external-browser) |
 | ------ | ----------- | :------------: | :---------------: |
 | Open External Window | Opens `https://line.me` in LINE's in-app browser.  | ✅ | ✅ |
 | Close LIFF App  | Closes the LIFF app.  | ✅ | ❌ |
-| Open QR Code Reader  | Opens the QR code reader and outputs the result. <br>⚠️ **Due to a technical issue, `liff.scanCode()` is temporarily unavailable on LINE for iOS v9.19.0 and later.**</br>| ✅ | ❌ |
+| Open QR Code Reader  | Opens the QR code reader and outputs the result. <br>⚠️ **Due to a technical issue, `liff.scanCode()` is unavailable on LINE for iOS v9.19.0 and later.**</br>| ✅ | ❌ |
 | Send Message  | Sends a sample message on behalf of the user if the LIFF app is opened in the chat screen.  | ✅ | ❌ |
 | Get Access Token  | Gets the current user's access token.  | ✅ | ✅ |
 | Get Profile  | Gets the current user's profile.  | ✅ | ✅ |
