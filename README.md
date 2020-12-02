@@ -226,7 +226,7 @@ Follow the below instructions to deploy your app using the server platform of yo
 
 You can open your LIFF app in LINE by creating a simple link from any chat:
 
-1. In any LINE chat, type `https://liff.line.me/{liffId}` and send the message. (For example, if your LIFF ID is `123456789`, send the message `https://liff.line.me/app/123456789`.)
+1. In any LINE chat, type `https://liff.line.me/{liffId}` and send the message. (For example, if your LIFF ID is `123456789`, send the message `https://liff.line.me/123456789`.)
 2. Tap the link in your own message.
 3. Agree to grant the required permissions to the LIFF app.
 

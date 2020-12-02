@@ -35,7 +35,7 @@ LIFFの使用方法に応じて、デプロイ方法を選択してください�
 
 ### LIFFにスターターアプリを追加する
 
-1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順にに従ってLIFFアプリをチャネルに追加してください。
+1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順に従ってLIFFアプリをチャネルに追加してください。
 2. 次のステップで必要になるので、LIFF IDをメモしておいてください。 LIFF IDはコンソールに表示される**LIFF URL**の最後の部分です： `https://liff.line.me/{liffId}`
 3. **Scope**オプションの**編集**ボタンをクリックします。
 4. **すべて表示**オプションをクリックして `chat_message.write` を有効にします。このスコープは LIFFアプリがユーザーに代わってメッセージを送信するために必要です。
@@ -130,7 +130,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 ### LIFFにスターターアプリを追加する
 
-1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順にに従ってLIFFアプリをチャネルに追加してください。
+1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順に従ってLIFFアプリをチャネルに追加してください。
 2. 次のステップで必要になるので、LIFF IDをメモしておいてください。 LIFF IDはコンソールに表示される**LIFF URL**の最後の部分です： `https://liff.line.me/{liffId}`
 3. **Scope**オプションの**編集**ボタンをクリックします。
 4. **すべて表示**オプションをクリックして `chat_message.write`を有効にします。このスコープは LIFFアプリがユーザーに代わってメッセージを送信するために必要です。
@@ -214,7 +214,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 ### LIFFにスターターアプリを追加する
 
-1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順にに従ってLIFFアプリをチャネルに追加してください。
+1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順に従ってLIFFアプリをチャネルに追加してください。
 
 2. 次のステップで必要になるので、LIFF IDをメモしておいてください。 LIFF IDはコンソールに表示される**LIFF URL**の最後の部分です： `https://liff.line.me/{liffId}`
 
