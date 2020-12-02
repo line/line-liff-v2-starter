@@ -20,7 +20,7 @@ Follow the below instructions to deploy your app using the Heroku button and Nod
 
 | Item | Description |
 | ---- | ----------- |
-| LINE Login channel | A LINE Login channel forms the connection between your app and LINE Login. Create a channel on the [LINE Developers console](https://developers.line.biz/console/register/messaging-api/channel/). |
+| LINE Login channel | A LINE Login channel forms the connection between your app and LINE Login. Create a channel on the [LINE Developers Console](https://developers.line.biz/console/register/messaging-api/channel/). |
 | Heroku account (optional) | [Heroku](https://www.heroku.com) is a cloud service that lets you deploy and serve web apps. You don't need a Heroku account if you're [deploying the app on another platform](#deploy-the-app-using-any-other-server-platform). |
 
 ### Deploy the app using 'Deploy to Heroku' button
@@ -187,7 +187,7 @@ Follow the below instructions to deploy your app using the server platform of yo
 ### Prerequisites
 | Item | Description |
 | ---- | ----------- |
-| LINE Login channel  | A LINE Login channel forms the connection between your app and LINE Login. Create a channel on the [LINE Developers console](https://developers.line.biz/console/register/messaging-api/channel/). |
+| LINE Login channel  | A LINE Login channel forms the connection between your app and LINE Login. Create a channel on the [LINE Developers Console](https://developers.line.biz/console/register/messaging-api/channel/). |
 
 
 ### Clone the repository
