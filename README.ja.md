@@ -248,7 +248,6 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 | ------ | ----------- | :------------: | :---------------: |
 | Open External Window | LINEのアプリ内ブラウザで`https://line.me`を開く。 | ✅ | ✅ |
 | Close LIFF App  | LIFF アプリを閉じます。 | ✅ | ❌ |
-| Open QR Code Reader  | QRコードリーダーを開き、結果を出力します。 <br>⚠️ **技術的な問題により、iOS v9.19.0以降のLINEでは `liff.scanCode()` は現在利用できません。**</br>| ✅ | ❌ |
 | Send Message | チャット画面でLIFFアプリを開いている場合、ユーザーに代わってサンプルメッセージを送信します。 | ✅ | ❌ |
 | Get Access Token  | 現在のユーザのアクセストークンを取得します。  | ✅ | ✅ |
 | Get Profile  | 現在のユーザのプロフィールを取得します。 | ✅ | ✅ |
