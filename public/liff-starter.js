@@ -180,6 +180,8 @@ function registerButtonHandlers() {
             ).catch(function (res) {
                 document.getElementById('shareTargetPickerMessage').textContent = "Failed to launch share target picker.";
             });
+        } else {
+            document.getElementById('shareTargetPickerMessage').textContent = "Share target picker unavailable.";
         }
     });
 
