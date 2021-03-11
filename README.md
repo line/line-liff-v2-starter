@@ -244,10 +244,10 @@ You'll find the following buttons in the starter app.
 | ------ | ----------- | :------------: | :---------------: |
 | Open External Window | Opens `https://line.me` in LINE's in-app browser.  | ✅ | ✅ |
 | Close LIFF App  | Closes the LIFF app.  | ✅ | ❌ |
-| Send Message  | Sends a sample message on behalf of the user if the LIFF app is opened in the chat screen.  | ✅ | ❌ |
+| Send Message  | Sends a sample message on behalf of the user if the LIFF app is opened in the chat screen. To use the Send Message function, you need to enable `chat_message.write` on [LINE Developers Console](https://developers.line.biz/console/). For more information, see [liff.sendMessages()](https://developers.line.biz/en/reference/liff/#send-messages). | ✅ | ❌ |
 | Get Access Token  | Gets the current user's access token.  | ✅ | ✅ |
 | Get Profile  | Gets the current user's profile.  | ✅ | ✅ |
-| Open Share Target Picker | Displays the target picker (screen for selecting a group or friend) and sends a sample message to the selected target.  | ✅ | ❌ |
+| Open Share Target Picker | Displays the target picker (screen for selecting a group or friend) and sends a sample message to the selected target. To use the share target picker, you need to enable it on [LINE Developers Console](https://developers.line.biz/console/). For more information, see [Using share target picker](https://developers.line.biz/ja/docs/liff/registering-liff-apps/#using-share-target-picker). | ✅ | ❌ |
 | Log In  | Performs LINE Login for web apps. Once the user is authenticated and authorized, the LIFF app will be able to obtain information such as access token and user profile.  | ❌ | ✅ |
 | Log Out |  Logs out the user. | ✅ | ✅ |
 

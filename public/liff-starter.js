@@ -181,7 +181,7 @@ function registerButtonHandlers() {
                 document.getElementById('shareTargetPickerMessage').textContent = "Failed to launch share target picker.";
             });
         } else {
-            document.getElementById('shareTargetPickerMessage').textContent = "Share target picker unavailable.";
+            document.getElementById('shareTargetPickerMessage').innerHTML = "<div>Share target picker unavailable.<div><div>This is possibly because you haven't enabled the share target picker on <a href='https://developers.line.biz/console/'>LINE Developers Console</a>.</div>";
         }
     });
 
