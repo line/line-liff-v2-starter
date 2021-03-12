@@ -137,22 +137,6 @@ function registerButtonHandlers() {
         }
     });
 
-    // scanCode call
-    document.getElementById('scanQrCodeButton').addEventListener('click', function() {
-        if (!liff.isInClient()) {
-            sendAlertIfNotInClient();
-        } else {
-            liff.scanCode().then(result => {
-                // e.g. result = { value: "Hello LIFF app!" }
-                const stringifiedResult = JSON.stringify(result);
-                document.getElementById('scanQrField').textContent = stringifiedResult;
-                toggleQrCodeReader();
-            }).catch(err => {
-                document.getElementById('scanQrField').textContent = "scanCode failed!";
-            });
-        }
-    });
-
     // get access token
     document.getElementById('getAccessToken').addEventListener('click', function() {
         if (!liff.isLoggedIn() && !liff.isInClient()) {
@@ -196,6 +180,8 @@ function registerButtonHandlers() {
             ).catch(function (res) {
                 document.getElementById('shareTargetPickerMessage').textContent = "Failed to launch share target picker.";
             });
+        } else {
+            document.getElementById('shareTargetPickerMessage').innerHTML = "<div>Share target picker unavailable.<div><div>This is possibly because you haven't enabled the share target picker on <a href='https://developers.line.biz/console/'>LINE Developers Console</a>.</div>";
         }
     });
 
@@ -235,13 +221,6 @@ function toggleAccessToken() {
 */
 function toggleProfileData() {
     toggleElement('profileInfo');
-}
-
-/**
-* Toggle scanCode result field
-*/
-function toggleQrCodeReader() {
-    toggleElement('scanQr');
 }
 
 /**

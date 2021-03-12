@@ -35,7 +35,7 @@ LIFFの使用方法に応じて、デプロイ方法を選択してください�
 
 ### LIFFにスターターアプリを追加する
 
-1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順に従ってLIFFアプリをチャネルに追加してください。
+1. 「[LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)」の手順に従ってLIFFアプリをチャネルに追加してください。
 2. 次のステップで必要になるので、LIFF IDをメモしておいてください。 LIFF IDはコンソールに表示される**LIFF URL**の最後の部分です： `https://liff.line.me/{liffId}`
 3. **Scope**オプションの**編集**ボタンをクリックします。
 4. **すべて表示**オプションをクリックして `chat_message.write` を有効にします。このスコープは LIFFアプリがユーザーに代わってメッセージを送信するために必要です。
@@ -50,7 +50,7 @@ LIFFの使用方法に応じて、デプロイ方法を選択してください�
 5. **Add**をクリックして入力した内容を保存します。
 6. エンドポイントURL（`https://{Herokuアプリ名}.herokuapp.com`）にWebブラウザーからアクセスし、アプリが正しく動作していることを確かめてください。正しく動作していれば、**Open External Window**や**Close LIFF App**などのボタンが表示されます。
 
-アプリを試す方法については、[アプリを試す](#アプリを試す)を参照してください。
+アプリを試す方法については、「[アプリを試す](#アプリを試す)」を参照してください。
 
 ### ログを確認する
 
@@ -130,7 +130,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 ### LIFFにスターターアプリを追加する
 
-1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順に従ってLIFFアプリをチャネルに追加してください。
+1. 「[LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)」の手順に従ってLIFFアプリをチャネルに追加してください。
 2. 次のステップで必要になるので、LIFF IDをメモしておいてください。 LIFF IDはコンソールに表示される**LIFF URL**の最後の部分です： `https://liff.line.me/{liffId}`
 3. **Scope**オプションの**編集**ボタンをクリックします。
 4. **すべて表示**オプションをクリックして `chat_message.write`を有効にします。このスコープは LIFFアプリがユーザーに代わってメッセージを送信するために必要です。
@@ -174,12 +174,12 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 7. 最後に、チャネルのステータスが**公開済み**であることを確認してください。
 
-アプリを試す方法について詳しくは、[アプリを試す](#アプリを試す)を参照してください。
+アプリを試す方法について詳しくは、「[アプリを試す](#アプリを試す)」を参照してください。
 
 ### Herokuログを確認する
 
 HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を使って、アプリのログを確認することができます。
-詳しくは[ログを確認する](#ログを確認する)を参照してください。
+詳しくは「[ログを確認する](#ログを確認する)」を参照してください。
 
 ## 他のサーバープラットフォームを使用する
 
@@ -214,7 +214,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 
 ### LIFFにスターターアプリを追加する
 
-1. [LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)の手順に従ってLIFFアプリをチャネルに追加してください。
+1. 「[LIFFアプリをチャネルに追加する](https://developers.line.biz/ja/docs/liff/registering-liff-apps/)」の手順に従ってLIFFアプリをチャネルに追加してください。
 
 2. 次のステップで必要になるので、LIFF IDをメモしておいてください。 LIFF IDはコンソールに表示される**LIFF URL**の最後の部分です： `https://liff.line.me/{liffId}`
 
@@ -248,15 +248,14 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 | ------ | ----------- | :------------: | :---------------: |
 | Open External Window | LINEのアプリ内ブラウザで`https://line.me`を開く。 | ✅ | ✅ |
 | Close LIFF App  | LIFF アプリを閉じます。 | ✅ | ❌ |
-| Open QR Code Reader  | QRコードリーダーを開き、結果を出力します。 <br>⚠️ **技術的な問題により、iOS v9.19.0以降のLINEでは `liff.scanCode()` は現在利用できません。**</br>| ✅ | ❌ |
-| Send Message | チャット画面でLIFFアプリを開いている場合、ユーザーに代わってサンプルメッセージを送信します。 | ✅ | ❌ |
+| Send Message | チャット画面でLIFFアプリを開いている場合、ユーザーに代わってサンプルメッセージを送信します。Send Messageを使用するには、[LINE Developersコンソール](https://developers.line.biz/console/)で`chat_message.write`を有効にする必要があります。詳しくは「[liff.sendMessages()](https://developers.line.biz/ja/reference/liff/#send-messages)」を参照してください。 | ✅ | ❌ |
 | Get Access Token  | 現在のユーザのアクセストークンを取得します。  | ✅ | ✅ |
 | Get Profile  | 現在のユーザのプロフィールを取得します。 | ✅ | ✅ |
-| Open Share Target Picker | ターゲットピッカー（グループやフレンドを選択する画面）を表示し、選択したターゲットにサンプルメッセージを送信します。  | ✅ | ❌ |
+| Open Share Target Picker | ターゲットピッカー（グループやフレンドを選択する画面）を表示し、選択したターゲットにサンプルメッセージを送信します。シェアターゲットピッカーを使用するには、[LINE Developersコンソール](https://developers.line.biz/console/)でシェアターゲットピッカーを有効にする必要があります。詳しくは「[シェアターゲットピッカーを利用するには](https://developers.line.biz/ja/docs/liff/registering-liff-apps/#using-share-target-picker)」を参照してください。  | ✅ | ❌ |
 | Log In  | WebアプリのLINEログインを実行します。ユーザーが認証・承認されると、LIFFアプリはアクセストークンやユーザープロファイルなどの情報を取得できるようになります。  | ❌ | ✅ |
 | Log Out |  ユーザーをログアウトします。 | ✅ | ✅ |
 
-ボタンに関連するAPIの呼び出しについては、[LIFF APIを呼び出す](https://developers.line.biz/ja/docs/liff/developing-liff-apps#calling-liff-api)を参照してください。
+ボタンに関連するAPIの呼び出しについては、「[LIFF APIを呼び出す](https://developers.line.biz/ja/docs/liff/developing-liff-apps#calling-liff-api)」を参照してください。
 
 [heroku-cli]: https://devcenter.heroku.com/articles/heroku-cli
 [liff-api-ref]: https://developers.line.biz/ja/reference/liff/
