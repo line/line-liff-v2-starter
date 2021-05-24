@@ -49,9 +49,9 @@ function initializeLiff(myLiffId) {
             liffId: myLiffId
         })
         .then(() => {
+            console.log("LIFF initialized")
             // start to use LIFF's api
             initializeApp();
-            console.log("LIFF initialized")
         })
         .catch((err) => {
             document.getElementById("liffAppContent").classList.add('hidden');
