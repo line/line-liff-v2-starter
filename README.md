@@ -249,7 +249,7 @@ You'll find the following buttons in the starter app.
 | Get Profile  | Gets the current user's profile.  | ✅ | ✅ |
 | Open Share Target Picker | Displays the target picker (screen for selecting a group or friend) and sends a sample message to the selected target. To use the share target picker, you need to enable it on [LINE Developers Console](https://developers.line.biz/console/). For more information, see [Using share target picker](https://developers.line.biz/ja/docs/liff/registering-liff-apps/#using-share-target-picker). | ✅ | ❌ |
 | Log In  | Performs LINE Login for web apps. Once the user is authenticated and authorized, the LIFF app will be able to obtain information such as access token and user profile.  | ❌ | ✅ |
-| Log Out |  Logs out the user. | ✅ | ✅ |
+| Log Out |  Logs out the user. | ❌ | ✅ |
 
 For API calls associated with the buttons, see [Calling the LIFF API](https://developers.line.biz/en/docs/liff/developing-liff-apps#calling-liff-api).
 

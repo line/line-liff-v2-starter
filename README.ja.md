@@ -253,7 +253,7 @@ HerokuのGUIや[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)を
 | Get Profile  | 現在のユーザのプロフィールを取得します。 | ✅ | ✅ |
 | Open Share Target Picker | ターゲットピッカー（グループやフレンドを選択する画面）を表示し、選択したターゲットにサンプルメッセージを送信します。シェアターゲットピッカーを使用するには、[LINE Developersコンソール](https://developers.line.biz/console/)でシェアターゲットピッカーを有効にする必要があります。詳しくは「[シェアターゲットピッカーを利用するには](https://developers.line.biz/ja/docs/liff/registering-liff-apps/#using-share-target-picker)」を参照してください。  | ✅ | ❌ |
 | Log In  | WebアプリのLINEログインを実行します。ユーザーが認証・承認されると、LIFFアプリはアクセストークンやユーザープロファイルなどの情報を取得できるようになります。  | ❌ | ✅ |
-| Log Out |  ユーザーをログアウトします。 | ✅ | ✅ |
+| Log Out |  ユーザーをログアウトします。 | ❌ | ✅ |
 
 ボタンに関連するAPIの呼び出しについては、「[LIFF APIを呼び出す](https://developers.line.biz/ja/docs/liff/developing-liff-apps#calling-liff-api)」を参照してください。
 
