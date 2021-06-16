@@ -49,7 +49,6 @@ function initializeLiff(myLiffId) {
             liffId: myLiffId
         })
         .then(() => {
-            console.log("LIFF initialized")
             // start to use LIFF's api
             initializeApp();
         })
