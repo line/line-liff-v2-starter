@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-}
+
 .box1 p {
     margin: 0;
     padding: 0;
@@ -15,4 +15,9 @@
 .box1 div {
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
