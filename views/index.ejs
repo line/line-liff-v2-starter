@@ -8,13 +8,14 @@
 </head>
 
 <body>
-    <a href="lineout-screen.html"></a>
     <% for (let item of items) { %>
-    <div class="box1">
-        <div><%- item.username %></div>
-        <div><%- item.comment %></div>
-        <div><%- item.wakeup_date %></div>
-    </div>
+    <a href="lineout-screen?call_id=<%- item.call_id %>">
+        <div class="box1">
+            <div><%- item.username %></div>
+            <div><%- item.comment %></div>
+            <div><%- item.wakeup_date %></div>
+        </div>
+    </a>
     <% } %>
 </body>
 
