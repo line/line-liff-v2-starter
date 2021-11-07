@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>起こして欲しい人一覧</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <a href="lineout-screen.html"></a>
+    <% for (let item of items) { %>
+    <div class="box1">
+        <div><%- item.username %></div>
+        <div><%- item.comment %></div>
+        <div><%- item.wakeup_date %></div>
+    </div>
+    <% } %>
+</body>
+
+</html>
