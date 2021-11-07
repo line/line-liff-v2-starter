@@ -5,8 +5,7 @@ const db = require('../db/db');
 router.get("/", function (req, res) {
     db.pool.connect((err, client) => {
         if (err) {
-            console.log(err);
-            res.send('database connection error!!')
+            res.send(err)
         } else {
             client.query('select *, username from call_orders, users;', (err, result) => {
                 let num = result.rows;
@@ -26,7 +25,7 @@ router.get("/lineout-screen", function (req, res) {
     db.pool.connect((err, client) => {
         if (err) {
             console.log(err);
-            res.send('database connection error!!')
+            res.send(err)
         } else {
             client.query('select *, username from call_orders, users;', (err, result) => {
                 let num = result.rows;
