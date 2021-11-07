@@ -3,7 +3,7 @@ require('dotenv').config();
 
 exports.pool = new pg.Pool({
     host: process.env.HOST,
-    database: process.env.DB,
+    database: process.env.DATABASE,
     user: process.env.USER,
     port: 5432,
     password: process.env.PASSWORD,
