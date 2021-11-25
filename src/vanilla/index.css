@@ -66,14 +66,6 @@ html, body {
   background-color: #353a40;
 }
 
-.badge--tertiary {
-  color: #353a40;
-  border: 1px solid #353a40;
-  background-color: transparent;
-  padding-top: calc(0.3em - 1px);
-  padding-bottom: calc(0.3em - 1px);
-}
-
 .home__buttons {
   display: flex;
   align-items: center;
