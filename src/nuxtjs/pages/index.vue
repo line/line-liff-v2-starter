@@ -10,7 +10,15 @@
     <div class="home__badges">
       <span class="home__badges__badge badge--primary"> LIFF Starter </span>
       <span class="home__badges__badge badge--secondary"> nuxtjs </span>
-      <span class="home__badges__badge badge--tertiary"> {{version}} </span>
+      <span class="home__badges__badge badge--primary"> {{ version }} </span>
+      <a
+        href="https://github.com/line/line-liff-v2-starter"
+        target="_blank"
+        rel="noreferrer"
+        class="home__badges__badge badge--secondary"
+      >
+        GitHub
+      </a>
     </div>
     <div class="home__buttons">
       <a
@@ -112,14 +120,6 @@ body {
   background-color: #353a40;
 }
 
-.badge--tertiary {
-  color: #353a40;
-  border: 1px solid #353a40;
-  background-color: transparent;
-  padding-top: calc(0.3em - 1px);
-  padding-bottom: calc(0.3em - 1px);
-}
-
 .home__buttons {
   display: flex;
   align-items: center;
@@ -208,11 +208,11 @@ body {
 <script>
 import packageJson from "../package.json";
 export default {
-  data: function () {
+  data: function() {
     return {
       version: packageJson.version,
       sdkVersion: "",
-      liffError: "",
+      liffError: ""
     };
   },
   mounted() {
@@ -225,6 +225,6 @@ export default {
       .catch((error) => {
         this.liffError = error;
       });
-  },
+  }
 };
 </script>
