@@ -2,8 +2,8 @@
   "name": "liff-starter-vanilla",
   "version": "0.1.0",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development LIFF_ID=yourliffid webpack-dev-server --progress",
-    "build": "cross-env NODE_ENV=production LIFF_ID=yourliffid webpack"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
     "@line/liff": "^2.16.0"
