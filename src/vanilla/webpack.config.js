@@ -43,7 +43,9 @@ const commonConfig = {
   },
 
   plugins: [
-    new webpack.EnvironmentPlugin(['LIFF_ID']),
+    new webpack.EnvironmentPlugin({
+      LIFF_ID: 'yourliffid'
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css",
