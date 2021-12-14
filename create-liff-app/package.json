@@ -1,0 +1,38 @@
+{
+  "name": "@line/create-liff-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": ""
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "yarn build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "SEE LICENSE IN README.md",
+  "engines": {
+    "node": ">=14"
+  },
+  "bin": {
+    "create-liff-app": "./dist/index.js"
+  },
+  "dependencies": {
+    "@types/tar": "^4.0.5",
+    "chalk": "^4.1.2",
+    "cross-spawn": "^7.0.3",
+    "got": "^11.8.2",
+    "inquirer": "^8.1.5",
+    "tar": "^6.1.11"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/inquirer": "^8.1.3",
+    "typescript": "^4.4.3"
+  }
+}
