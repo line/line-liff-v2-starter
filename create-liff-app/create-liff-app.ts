@@ -25,7 +25,7 @@ export async function createLiffApp(value: Answers): Promise<void> {
       path: root, 
       owner: "line", 
       repo: "line-liff-v2-starter",
-      name: `src/${template}`
+      name: `templates/${template}`
     });
     await install(projectName, useYarn);
   } catch (e) {

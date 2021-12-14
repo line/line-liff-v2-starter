@@ -1,11 +1,30 @@
 {
   "name": "liff-starter",
+  "private": "true",
   "version": "3.0.0",
   "description": "A minimun app to demo how to integrate LIFF",
   "repository": {
     "type": "git",
     "url": "https://github.com/line/line-liff-v2-starter"
   },
+  "scripts": {
+    "ws:cla": "yarn workspace @line/create-liff-app",
+    "ws:next": "yarn workspace liff-starter-nextjs",
+    "ws:nuxt": "yarn workspace liff-starter-nuxtjs",
+    "ws:vanilla": "yarn workspace liff-starter-vanilla",
+    "cla": "yarn build:cla && yarn ws:cla node ./dist/index.js",
+    "dev:next": "yarn ws:next dev",
+    "dev:nuxt": "yarn ws:nuxt dev",
+    "dev:vanilla": "yarn ws:vanilla dev",
+    "build:cla": "yarn ws:cla build",
+    "build:next": "yarn ws:next build",
+    "build:nuxt": "yarn ws:nuxt build",
+    "build:vanilla": "yarn ws:vanilla build"
+  },
+  "workspaces": [
+    "templates/*",
+    "create-liff-app"
+  ],
   "keywords": [
     "LINE",
     "LIFF"
