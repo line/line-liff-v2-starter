@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const env = process.env.NODE_ENV;
 
@@ -43,9 +44,7 @@ const commonConfig = {
   },
 
   plugins: [
-    new webpack.EnvironmentPlugin({
-      LIFF_ID: 'yourliffid'
-    }),
+    new Dotenv({ systemvars: true }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css",
