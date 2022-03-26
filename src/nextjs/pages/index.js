@@ -11,7 +11,7 @@ export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>LIFF Starter</title>
+        <title>散歩当番</title>
       </Head>
       <div className="home">
         <h1 className="home__title">
