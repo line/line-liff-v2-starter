@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt -p 9000",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-    "@line/liff": "^2.16.0",
-    "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "@line/liff": "^2.23.0",
+    "nuxt": "^3.8.2",
+    "@nuxt/devtools": "latest"
+  }
 }
