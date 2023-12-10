@@ -1,3 +1,4 @@
+// this import can be removed if you don't need to display the version on the page
 import pkg from './package.json'
 
 export default defineNuxtConfig({
