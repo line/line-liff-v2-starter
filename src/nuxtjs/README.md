@@ -8,15 +8,16 @@ You can check the source code and modify it to implement some cool stuff with LI
 
 ```bash
 # install dependencies
-$ npm install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev
 
 # build for production and launch server
-$ npm run build
-$ npm run start
+
+$ yarn build
+$ node .output/server/index.mjs
 
 # generate static project
-$ npm run generate
+$ yarn generate
 ```
