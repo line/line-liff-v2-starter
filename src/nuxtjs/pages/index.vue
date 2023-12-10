@@ -205,26 +205,23 @@ body {
 }
 </style>
 
-<script>
-import packageJson from "../package.json";
-export default {
-  data: function() {
-    return {
-      version: packageJson.version,
-      sdkVersion: "",
-      liffError: ""
-    };
-  },
-  mounted() {
-    // mounted() is rendered when DOM is rendered
-    // wait liff.init()
-    this.$liffInit
-      .then(() => {
-        this.sdkVersion = liff.getVersion();
-      })
-      .catch((error) => {
-        this.liffError = error;
-      });
-  }
-};
+<script setup lang="ts">
+import liff from '@line/liff';
+// Import runtime config for env variables
+const runtimeConfig = useRuntimeConfig();
+const version = runtimeConfig.public.VERSION;
+const liffId = runtimeConfig.public.LIFF_ID;
+
+// Init LIFF when DOM is mounted
+// https://vuejs.org/api/composition-api-lifecycle.html#onmounted
+onMounted(async () => {
+  if(!liffId) {
+    console.error('Please set LIFF_ID in .env file')
+    return
+  };
+
+  await liff.init({ liffId: liffId });
+  console.log('LIFF init success');
+  console.log('LIFF SDK version', liff.getVersion());
+})
 </script>
