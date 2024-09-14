@@ -1,3 +1,13 @@
+# DARKNESS-SEX repo
+
+## 起動方法
+
+```bash
+git clone git@github.com:DARKNESS-SEX/DARKNESS-SEX.git
+cd src/nextjs/
+./run.sh
+```
+---
 # LIFF Starter
 
 LIFF Starter is a good starter template can help you understand how to integrate LIFF into your own development environment.
