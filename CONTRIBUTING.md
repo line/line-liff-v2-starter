@@ -47,7 +47,3 @@ In general, we follow these steps:
 4. Commit changes to the branch
 5. Push changes to your fork
 6. Open a PR in our repository and follow the PR template so that we can efficiently review the changes.
-
-## Getting Help
-
-Join us in the [LINE Developers Community](https://www.line-community.me/en/questions) and post your question there in the correct category with a descriptive tag.
