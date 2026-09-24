@@ -12,8 +12,6 @@ First, create a `.env` file in the root directory of the project, and add the fo
 LIFF_ID=YOUR_LIFF_ID
 ```
 
-This project requires **npm 12 or later** (Node's bundled npm is older; run `npm install -g npm@12` once).
-
 Then, run the following commands:
 
 ```bash
