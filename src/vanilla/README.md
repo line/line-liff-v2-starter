@@ -9,7 +9,6 @@ You can check the source code and modify it to implement some cool stuff with LI
 First, run the development server:
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
 ```
