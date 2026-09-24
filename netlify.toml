@@ -1,5 +1,5 @@
 [build]
-  command = "cd src/vanilla && yarn install && yarn build"
+  command = "npm install -g npm@12 && cd src/vanilla && npm ci && npm run build"
   publish = "src/vanilla/dist"
 
 [template.environment]

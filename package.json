@@ -9,5 +9,12 @@
   "keywords": [
     "LINE",
     "LIFF"
-  ]
+  ],
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">=12.0.0",
+      "onFail": "error"
+    }
+  }
 }

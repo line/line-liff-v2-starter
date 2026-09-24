@@ -11,7 +11,17 @@
   },
   "devDependencies": {
     "@line/liff": "^2.27.2",
-    "nuxt": "^3.8.2",
-    "@nuxt/devtools": "latest"
+    "nuxt": "^3.8.2"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">=12.0.0",
+      "onFail": "error"
+    }
+  },
+  "allowScripts": {
+    "esbuild": false,
+    "fsevents": false
   }
 }

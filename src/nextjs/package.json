@@ -17,5 +17,16 @@
   "devDependencies": {
     "eslint": "9.13.0",
     "eslint-config-next": "15.0.1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">=12.0.0",
+      "onFail": "error"
+    }
+  },
+  "allowScripts": {
+    "sharp": false,
+    "unrs-resolver": false
   }
 }

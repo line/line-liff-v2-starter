@@ -27,5 +27,16 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.1.0",
     "webpack-merge": "^5.8.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">=12.0.0",
+      "onFail": "error"
+    }
+  },
+  "allowScripts": {
+    "core-js": false,
+    "fsevents": false
   }
 }

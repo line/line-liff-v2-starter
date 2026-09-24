@@ -12,20 +12,22 @@ First, create a `.env` file in the root directory of the project, and add the fo
 LIFF_ID=YOUR_LIFF_ID
 ```
 
+This project requires **npm 12 or later** (Node's bundled npm is older; run `npm install -g npm@12` once).
+
 Then, run the following commands:
 
 ```bash
 # install dependencies
-$ yarn install
+$ npm ci
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 
 # build for production and launch server
 
-$ yarn build
+$ npm run build
 $ node .output/server/index.mjs
 
 # generate static project
-$ yarn generate
+$ npm run generate
 ```
