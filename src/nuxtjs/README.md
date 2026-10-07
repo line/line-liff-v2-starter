@@ -16,16 +16,16 @@ Then, run the following commands:
 
 ```bash
 # install dependencies
-$ yarn install
+$ npm ci
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 
 # build for production and launch server
 
-$ yarn build
+$ npm run build
 $ node .output/server/index.mjs
 
 # generate static project
-$ yarn generate
+$ npm run generate
 ```
