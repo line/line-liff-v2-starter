@@ -6,7 +6,7 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
-    "@line/liff": "^2.27.2"
+    "@line/liff": "2.31.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@line/liff": "^2.27.2",
+    "@line/liff": "2.31.2",
     "nuxt": "^3.8.2"
   },
   "devEngines": {
